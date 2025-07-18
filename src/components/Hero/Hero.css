@@ -51,7 +51,8 @@
 }
 
 .hero-btn:hover {
-  background-color: #eaaeef;
+  transform: scaleX(1.05);
+  transition: ease-in 0.3s;
 }
 
 .hero-image img {
