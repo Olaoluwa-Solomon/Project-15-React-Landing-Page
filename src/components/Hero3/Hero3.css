@@ -1,0 +1,80 @@
+.hero3 {
+  position: relative;
+  background: url("../../assets/blog-5.jpg") no-repeat center center/cover;
+  color: white;
+  min-height: 100vh;
+  /* padding: 1rem 1rem; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  overflow: hidden;
+  gap: 3rem;
+}
+
+.hero3-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.756); /* dimming */
+  z-index: 1;
+}
+
+.hero3-image,
+.hero3-text {
+  position: relative;
+  z-index: 2;
+}
+
+.hero3-text {
+  max-width: 500px;
+  text-align: left;
+}
+
+.hero3-text h1 {
+  font-size: 2.5rem;
+  line-height: 1.2;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* .hero3-image {
+  background-color: red;
+} */
+
+.hero3-image img {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 5px;
+  height: 100%;
+}
+
+.hero3-text p {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+  .hero3 {
+    flex-direction: column;
+    text-align: center;
+    gap: 0.5rem;
+    /* overflow: hidden; */
+    /* padding-top: 8rem; */
+  }
+
+  .hero3-text {
+    text-align: center;
+    padding: 1rem;
+  }
+
+  .hero3-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero3-text p {
+    font-size: 0.95rem;
+  }
+}

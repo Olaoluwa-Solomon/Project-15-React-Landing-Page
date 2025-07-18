@@ -1,0 +1,149 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-weight: 300;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #0c0016;
+  color: white;
+  padding: 1.5rem 2rem;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  margin-bottom: 0.3rem;
+  z-index: 1000;
+  display: block;
+}
+
+.nav-links {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  position: static;
+  transform: translateX(0);
+  opacity: 1;
+  pointer-events: auto;
+  background-color: #0c0016;
+  flex-direction: row;
+  width: auto;
+  height: auto;
+  padding: 0;
+  border-radius: 0;
+  box-shadow: none;
+  z-index: auto;
+
+  transition: none;
+}
+
+.nav-links button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+.nav-links .register-btn {
+  background-color: #fca311;
+  padding: 0.5rem 1rem;
+  border-radius: 2px;
+  color: #0a0a23;
+}
+
+.nav-links .register-btn:hover {
+  background-color: #eaaeef;
+  transition: ease-in 0.3s;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger .bar {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 3px 0;
+  transition: all 0.3s ease;
+}
+
+.hamburger .bar:nth-child(2) {
+  opacity: 1;
+}
+.hamburger .bar:nth-child(1).open {
+  transform: rotate(-45deg) translate(-7px, 6px);
+}
+.hamburger .bar:nth-child(2).open {
+  opacity: 0;
+}
+.hamburger .bar:nth-child(3).open {
+  transform: rotate(45deg) translate(-6px, -6px);
+}
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .navbar {
+    background-color: #110819;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 8%;
+    left: 50%;
+    width: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.1rem;
+    padding: 1rem 0;
+    z-index: 999;
+    transform: translateY(-100%);
+    opacity: 0;
+    pointer-events: none;
+    background-color: #1c0d29;
+    transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+    border-radius: 5px;
+    box-shadow: none;
+  }
+
+  .nav-links.open {
+    transform: translateX(0);
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+  .nav-links button {
+    font-size: 1rem;
+    padding: 1rem 0;
+    width: 80%;
+    text-align: center;
+  }
+}
