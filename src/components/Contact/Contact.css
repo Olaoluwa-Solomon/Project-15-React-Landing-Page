@@ -37,7 +37,7 @@ form {
 .input-row {
   display: flex;
   gap: 1rem;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
 }
 
 .input-row input {
@@ -84,9 +84,7 @@ textarea {
   display: flex;
   flex-direction: row;
   gap: 0.5rem;
-  /* background-color: red; */
   overflow: hidden;
-  /* min-width: 300px; */
 }
 
 .contact-box {
@@ -94,7 +92,6 @@ textarea {
   width: 33%;
   height: 120px;
   align-items: center;
-  /* gap: 1rem; */
   border: 2px solid #fca311;
   padding: 0.5rem;
   border-radius: 10px;
