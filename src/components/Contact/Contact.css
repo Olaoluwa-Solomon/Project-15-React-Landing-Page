@@ -162,5 +162,6 @@ textarea {
 
   .input-row {
     flex-direction: column;
+    flex-wrap: wrap;
   }
 }

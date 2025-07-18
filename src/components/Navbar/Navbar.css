@@ -101,7 +101,7 @@ body {
 
 @media (max-width: 768px) {
   .logo {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
 
   .hamburger {
@@ -111,6 +111,7 @@ body {
 
   .navbar {
     background-color: #110819;
+    padding: 1rem;
   }
 
   .nav-links {

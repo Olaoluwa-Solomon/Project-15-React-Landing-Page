@@ -96,8 +96,9 @@
 @media (max-width: 768px) {
   .hero {
     flex-direction: column;
-    padding: 4rem 1rem 0;
+    padding: 3rem 1rem 0;
     gap: 1rem;
+    margin-top: 3.5rem;
   }
 
   .hero-text h1 {
